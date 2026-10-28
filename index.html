@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Hall of Fame | Machine Magnets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="bar"></div>
+<header class="nav">
+  <a class="mk" href="#top" aria-label="Machine Magnets, back to top">MM</a>
+  <nav aria-label="Primary">
+    <a href="#top">Home</a><a href="#champions">Champions</a><a href="#team">Core team</a><a href="#gallery">Gallery</a><a href="#timeline">Timeline</a>
+  </nav>
+</header>
+
+<main>
+<section id="top" class="hero dark" data-sec>
+  <div class="blob" data-speed="-0.12" style="width:520px;height:520px;right:-120px;top:-80px;background:rgba(163,24,43,.45)"></div>
+  <div class="blob" data-speed="0.1" style="width:260px;height:260px;left:8%;bottom:6%;background:rgba(216,179,106,.16)"></div>
+  <div class="wrap grid">
+    <div>
+      <p class="kick rv">Machine Magnets, NIET</p>
+      <h1 class="rt" data-t="Hall of Fame" aria-label="Hall of Fame"></h1>
+      <p class="lead rv" style="--d:300ms">Champions, winners and milestones from the club that is attracted to innovation.</p>
+      <div class="acts rv" style="--d:450ms"><a class="btn" href="#champions">Meet the champions</a><a class="btn g" href="#timeline">Turn the timeline</a></div>
+    </div>
+    <div class="dash">
+      <div class="glass rv" style="--d:350ms"><dl class="stats" id="stats"></dl></div>
+      <div class="glass hl rv" style="--d:500ms"><p class="meta">Latest highlight</p><h3>Placeholder: newest winning team</h3><p>Replace with the most recent hackathon or event result.</p><span class="tag">Placeholder</span></div>
+      <div class="cue rv" style="--d:650ms"><i></i>Scroll to explore</div>
+    </div>
+  </div>
+</section>
+
+<section id="champions" class="sec" data-sec>
+  <div class="blob" data-speed="0.08" style="width:420px;height:420px;left:-140px;top:10%;background:rgba(163,24,43,.16)"></div>
+  <div class="wrap">
+    <h2 class="h2 rt" data-t="Champions and winners"></h2>
+    <p class="sub rv">Teams and members who won at hackathons and events conducted by the club.</p>
+    <div class="champs">
+      <article class="glass champ f rv"><span class="badge">1st place</span><p class="meta">Hackathon · Year</p><h3>Placeholder winning team</h3><p>Short description of the problem they solved and what they built.</p><span class="tag">Placeholder</span></article>
+      <article class="glass champ rv" style="--d:150ms"><p class="meta">Event · 2nd place</p><h3>Placeholder runner-up</h3><p>Short description of the result and the event.</p><span class="tag">Placeholder</span></article>
+      <article class="glass champ rv" style="--d:300ms"><p class="meta">Hackathon · 3rd place</p><h3>Placeholder third place</h3><p>Short description of the result and the event.</p><span class="tag">Placeholder</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="sec tint" data-sec>
+  <div class="blob" data-speed="-0.07" style="width:380px;height:380px;right:-100px;top:0;background:rgba(216,179,106,.25)"></div>
+  <div class="wrap">
+    <h2 class="h2 rt" data-t="Core team achievements"></h2>
+    <p class="sub rv">Recognition earned by the people who run the club.</p>
+    <div class="team" id="teamg"></div>
+  </div>
+</section>
+
+<section id="gallery" class="sec" data-sec>
+  <div class="blob" data-speed="0.09" style="width:460px;height:460px;left:30%;top:-120px;background:rgba(163,24,43,.12)"></div>
+  <div class="wrap">
+    <h2 class="h2 rt" data-t="Gallery"></h2>
+    <p class="sub rv">Moments from hackathons, events and the core team. Swap the gradient tiles for real photos.</p>
+    <div class="chips rv" id="chips" role="group" aria-label="Filter gallery"></div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section id="timeline" class="wsec" data-sec aria-labelledby="tl-h">
+  <div class="stage dark">
+    <div class="wrap head"><h2 class="h2" id="tl-h">Timeline</h2><p>Keep scrolling to turn the wheel.</p></div>
+    <div class="wheel" id="wheel" aria-hidden="true"></div>
+    <div class="cap" id="cap" aria-hidden="true"><p class="y" id="cy">2024</p><p class="tt" id="ct"></p><p class="dd" id="cd"></p></div>
+  </div>
+  <ol class="tlf sr" id="tlf"></ol>
+</section>
+
+<section id="join" class="cta" data-sec>
+  <div class="blob" data-speed="-0.1" style="width:420px;height:420px;right:-80px;top:-60px;background:rgba(216,179,106,.22)"></div>
+  <div class="wrap">
+    <div class="glass dark rv">
+      <h2 class="h2 rt" data-t="Your name could be next"></h2>
+      <p>Join the community, take part in events and build something worth recognising.</p>
+      <div class="acts"><a class="btn" href="https://chat.whatsapp.com/F6PwUIO6qU3EFi1HGbCBus" target="_blank" rel="noopener noreferrer">Join WhatsApp</a><a class="btn g" href="https://machine-magnets.netlify.app/events" target="_blank" rel="noopener noreferrer">See events</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><p>Empowering the next generation of AI/ML innovators</p><p><a href="https://machine-magnets.netlify.app/" target="_blank" rel="noopener noreferrer">Club site</a><a href="https://www.instagram.com/machinemagnets" target="_blank" rel="noopener noreferrer">Instagram</a>© 2026 Machine Magnets Club, NIET</p></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
